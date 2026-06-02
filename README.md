@@ -79,3 +79,10 @@ Every element can be individually styled:
 - **Background box** — toggle a semi-transparent backdrop for readability.
 - **Custom fonts** — use **any font installed on your system** (TrueType `.ttf`/`.ttc`), with a searchable font picker, in addition to Minecraft's default and alt fonts.
 - **Format options** — many elements offer multiple display formats (see below).
+<<<<<<< HEAD
+=======
+
+© 2026 traxonLp. All Rights Reserved.
+Source is provided for transparency only.
+Redistribution, forking, and modification are not permitted without explicit written permission.
+>>>>>>> 4ed8927 (Initial commit of TinyHUD)
