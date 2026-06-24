@@ -12,8 +12,8 @@ public class HudRenderer implements GuiLayer {
     @Override
     public void render(GuiGraphicsExtractor gfx, DeltaTracker delta) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.screen instanceof HudEditorScreen) return;
-        if (mc.options.hideGui) return;   // respect vanilla "Hide HUD" (F1)
+        if (mc.gui.screen() instanceof HudEditorScreen) return;
+        if (mc.gui.hud.isHidden()) return;   // respect vanilla "Hide HUD" (F1)
         if (mc.player == null || mc.level == null) return;
         int sw = gfx.guiWidth();
         int sh = gfx.guiHeight();

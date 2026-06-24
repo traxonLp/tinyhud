@@ -42,8 +42,8 @@ public class TinyHUDClient {
     private static void onClientTick(ClientTickEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
         while (KeyBindings.OPEN_EDITOR.consumeClick()) {
-            if (mc.screen == null) {
-                mc.setScreen(new HudEditorScreen());
+            if (mc.gui.screen() == null) {
+                mc.setScreenAndShow(new HudEditorScreen());
             }
         }
     }
